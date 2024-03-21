@@ -41,6 +41,10 @@ def human():
     print(minutes, "minutes or")
     print(seconds, "seconds")
     print("to a system with the factor 0")
+    print()
+    velocity_solution = math.sqrt(1-(1/gamma**2))*c
+    percentage_of_lightspeed = (gamma/c)*100
+    print("But for that you would have to go at a speed of", velocity_solution,"km/s which is", percentage_of_lightspeed,"percent of the speed of light")
 
 
 #asking the user what he is looking for
