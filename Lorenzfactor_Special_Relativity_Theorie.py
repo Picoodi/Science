@@ -24,7 +24,7 @@ def velocity():
     velocity_solution = math.sqrt(1-(1/gamma**2))*c
     print(velocity_solution)
     
-    
+ #function that calculates how much of a change of lifetime it would be for a human of 83 years in relativity to a system with factor 0   
 def human():
     print("Your gamma plz:")
     gamma = float(input())
