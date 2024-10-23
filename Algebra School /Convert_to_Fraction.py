@@ -1,3 +1,5 @@
+#PROBLEM: THE WORKING WITH DECIMALS DOESNT WORK SO GOOD IN PYTHON NEEDS TO BE FIXED
+
 #A function to convert decimals into a fraction which is stored as a tuple
 #eg for making solutions look better
 
