@@ -7,7 +7,7 @@ def decimals_to_fraction(decimal: str):
   numerator = int(number*10*exponent)
   denominator = 10*exponent
 
-return numerator, denominator
+  return numerator, denominator
 
 
 
