@@ -2,7 +2,7 @@ import sympy
 
 #This Function Factorises an input equation if possible and returns it 
 def factoring(equation):
-  #We create a list with the alphabet so equations with all variables work
+  #We create a list with the alphabet so equations with multiple variables work
   var("a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z")
   solution = sympy.factor(equation)
   return solution
