@@ -33,12 +33,12 @@ def print_Tree(Node, depth = 0):
 
 
 
-#Random code so i get some data
+#Test code to create some data and see if it works
 root = Node(0, "Root")
-root.createleftchild(1,"Its a girl")
-root.left.createleftchild(2, "Its a boy")
-root.createrightchild(10, "No name")
-root.right.createrightchild(11, "Wtf")
-root.right.right.createleftchild(29,"Bonjour")
-root.left.createrightchild(31, "Whyyy")
+root.createleftchild(1,"left")
+root.left.createleftchild(2, "childleft")
+root.createrightchild(10, "right")
+root.right.createrightchild(11, "childright")
+root.right.right.createleftchild(29,"childrightrightleft")
+root.left.createrightchild(31, "childleftright")
 print_Tree(root)
