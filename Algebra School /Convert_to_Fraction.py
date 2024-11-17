@@ -1,8 +1,5 @@
-#PROBLEM: THE WORKING WITH DECIMALS DOESNT WORK SO GOOD IN PYTHON NEEDS TO BE FIXED
-
-#A function to convert decimals into a fraction which is stored as a tuple
-#eg for making solutions look better
-
+#A function to convert decimals into a fraction which is stored as a tuple not fully shortened
+#The return is in the form (numerator, denominator)
 def decimals_to_fraction(decimal: str):
   exponent = int(len(decimal))-1
   number = float(decimal)
@@ -12,12 +9,18 @@ def decimals_to_fraction(decimal: str):
 
 
 
-#TEST CODE
-#x = 0.1 and y = 0.7 x+y= 0.8
-x= 0.1
-y= 0.7
-equation = x+y
-print(x+y)
+def decimals_to_fraction(decimal: str):
+  exponent = int(len(decimal))-1
+  number = float(decimal)
+  numerator = int(number*10*exponent)
+  denominator = 10*exponent
+  return numerator, denominator
 
-solution = decimals_to_fractions(str(equation))
-print(solution[0], "/", solution[1])
+
+#A test function
+def test(decimal, solution):      
+    answer = decimals_to_fraction(str(decimal))
+    if answer == solution:
+        print("TEST PASSED")
+    else:
+        print("NOT PASSED")
