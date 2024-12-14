@@ -9,12 +9,13 @@ def Fibonacci(n):
     elif n == 2:
         return [0,1]
 
-    else:
+    elif n > 2:
         Fibonacci = [0,1]
-        for i in range(1,n):
-            Fibonacci.append(Fibonacci[i-1]+ Fibonacci[i])
-            
-            return Fibonacci
+        for i in range(1,n-1):
+            Fibonacci.append(Fibonacci[i] + Fibonacci[i-1])
+
+        return Fibonacci
+
 
 
   
