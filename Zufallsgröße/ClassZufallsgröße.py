@@ -63,6 +63,11 @@ class Zufallsgröße():
 
         plt.step(x,F, where= "post", color= "blue")  
         plt.scatter(x,F, color ="blue", s= 100)
+        plt.get_current_fig_manager().set_window_title("Treppenfunktion T("+self.Name+")")
+        plt.title("Treppenfunktion T("+self.Name+")")
+        plt.xlabel("xi")
+        plt.ylabel("T("+ self.Name+")")
+        plt.show(block= False)
 
 
     def Erwartungswert(self):
