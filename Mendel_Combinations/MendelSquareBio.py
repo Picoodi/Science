@@ -39,6 +39,6 @@ solution = create_Kombinationsquadrat(generate_combinations(userinput))
 with open("Mendel_Kombinationsliste.txt", "w") as file:
     i = 0
     while i < len(solution):
-        file.write(" "+solution[i]+" ")
+        file.write(solution[i]+" ")
         i = i+1
 print("Succesfully saved in txt")
