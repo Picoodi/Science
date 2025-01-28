@@ -1,5 +1,5 @@
-from prettytable import PrettyTable
-table = PrettyTable()
+userinput = "ab"
+
 
 def generate_combinations(letters):
         if not letters:
@@ -9,7 +9,7 @@ def generate_combinations(letters):
 
         # Solution list for new combinations
         solution = []
-
+        
         # Für jede Kombination aus der rekursiven Rückgabe füge den aktuellen Buchstaben hinzu
         for kombi in first_combis:
             solution.append(letters[0].upper() + kombi)  # Append uppercase letters
@@ -18,7 +18,6 @@ def generate_combinations(letters):
         return solution
 
 def create_Kombinationsquadrat(combinations):
-        table.add_column("Kombinationsquadrat", combinations)
         combinations2 = combinations
         Kombinationsquadrat = []
         i = 0
@@ -28,17 +27,14 @@ def create_Kombinationsquadrat(combinations):
             while s < len(combinations2):
                 kombination = combinations[i] + combinations2[s]
                 Kombinationsquadrat.append(kombination)
-                Tablelist.append(kombination)
                 s = s+1
-
-            table.add_column(combinations[i], Tablelist)
+                    
             i = i+1
 
         return Kombinationsquadrat
 
 
 
-userinput = "ab"
 solution = create_Kombinationsquadrat(generate_combinations(userinput))
 with open("Mendel_Kombinationsliste.txt", "w") as file:
     i = 0
